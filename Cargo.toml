@@ -1,6 +1,11 @@
-[workspace]
-resolver = "2"
-members = [
-    "rtti",
-    "dyn_trait_obj"
-]
+[package]
+name = "bench"
+version = "0.1.0"
+edition = "2021"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[dependencies]
+criterion = "0.5.1"
